@@ -40,7 +40,7 @@ def numberOfWays(startPos: int, endPos: int, k: int) -> int:
     num_ways = 0
     for path in paths:
         if path[-1] == endPos:
-            new_ways += 1
+            num_ways += 1
     return num_ways
 
 
@@ -58,6 +58,7 @@ def test_number_of_ways():
     It can be proven that no other way is possible, so we return 3.
     """
     print(numberOfWays(1, 2, 3))
+
 
 if __name__ == "__main__":
     test_number_of_ways()
